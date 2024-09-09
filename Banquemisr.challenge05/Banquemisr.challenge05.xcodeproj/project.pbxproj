@@ -7,10 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0422DADC2C8F384D003DCDC8 /* MoviesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422DADB2C8F384D003DCDC8 /* MoviesView.swift */; };
+		0422DADE2C8F3888003DCDC8 /* MovieDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422DADD2C8F3888003DCDC8 /* MovieDetailsView.swift */; };
+		0422DAE02C8F38A5003DCDC8 /* MoviesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422DADF2C8F38A5003DCDC8 /* MoviesViewModel.swift */; };
+		0422DAE62C8F56D8003DCDC8 /* MovieEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422DAE52C8F56D8003DCDC8 /* MovieEntity.swift */; };
+		0422DAE82C8F57C4003DCDC8 /* MovieDetailesEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422DAE72C8F57C4003DCDC8 /* MovieDetailesEntity.swift */; };
+		0422DAEA2C8F8DD8003DCDC8 /* GetNowPlayingUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422DAE92C8F8DD8003DCDC8 /* GetNowPlayingUseCase.swift */; };
+		0422DAEC2C8F8E97003DCDC8 /* MoviesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422DAEB2C8F8E97003DCDC8 /* MoviesRepository.swift */; };
+		0422DAF12C8F9256003DCDC8 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422DAF02C8F9256003DCDC8 /* EndPoint.swift */; };
+		0422DAF32C8F9333003DCDC8 /* MoviesEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422DAF22C8F9333003DCDC8 /* MoviesEndPoint.swift */; };
+		0422DAF62C8F978F003DCDC8 /* MoviesRepositoryImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422DAF52C8F978F003DCDC8 /* MoviesRepositoryImp.swift */; };
+		0422DAF82C8F9818003DCDC8 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422DAF72C8F9818003DCDC8 /* NetworkProvider.swift */; };
+		0422DAFB2C8FADD0003DCDC8 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422DAFA2C8FADD0003DCDC8 /* Extentions.swift */; };
+		0422DAFD2C8FB85D003DCDC8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422DAFC2C8FB85D003DCDC8 /* HomeView.swift */; };
 		04CCB4702C89F5A200642828 /* Banquemisr_challenge05App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CCB46F2C89F5A200642828 /* Banquemisr_challenge05App.swift */; };
 		04CCB4722C89F5A200642828 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CCB4712C89F5A200642828 /* Persistence.swift */; };
 		04CCB4752C89F5A200642828 /* Banquemisr_challenge05.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04CCB4732C89F5A200642828 /* Banquemisr_challenge05.xcdatamodeld */; };
-		04CCB4772C89F5A200642828 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CCB4762C89F5A200642828 /* ContentView.swift */; };
 		04CCB4792C89F5A600642828 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04CCB4782C89F5A600642828 /* Assets.xcassets */; };
 		04CCB47D2C89F5A600642828 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04CCB47C2C89F5A600642828 /* Preview Assets.xcassets */; };
 		04CCB4872C89F5A700642828 /* Banquemisr_challenge05Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CCB4862C89F5A700642828 /* Banquemisr_challenge05Tests.swift */; };
@@ -36,11 +48,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0422DADB2C8F384D003DCDC8 /* MoviesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesView.swift; sourceTree = "<group>"; };
+		0422DADD2C8F3888003DCDC8 /* MovieDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsView.swift; sourceTree = "<group>"; };
+		0422DADF2C8F38A5003DCDC8 /* MoviesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewModel.swift; sourceTree = "<group>"; };
+		0422DAE52C8F56D8003DCDC8 /* MovieEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieEntity.swift; sourceTree = "<group>"; };
+		0422DAE72C8F57C4003DCDC8 /* MovieDetailesEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailesEntity.swift; sourceTree = "<group>"; };
+		0422DAE92C8F8DD8003DCDC8 /* GetNowPlayingUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetNowPlayingUseCase.swift; sourceTree = "<group>"; };
+		0422DAEB2C8F8E97003DCDC8 /* MoviesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesRepository.swift; sourceTree = "<group>"; };
+		0422DAF02C8F9256003DCDC8 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		0422DAF22C8F9333003DCDC8 /* MoviesEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesEndPoint.swift; sourceTree = "<group>"; };
+		0422DAF52C8F978F003DCDC8 /* MoviesRepositoryImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesRepositoryImp.swift; sourceTree = "<group>"; };
+		0422DAF72C8F9818003DCDC8 /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
+		0422DAFA2C8FADD0003DCDC8 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		0422DAFC2C8FB85D003DCDC8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		04CCB46C2C89F5A200642828 /* Banquemisr.challenge05.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Banquemisr.challenge05.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04CCB46F2C89F5A200642828 /* Banquemisr_challenge05App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banquemisr_challenge05App.swift; sourceTree = "<group>"; };
 		04CCB4712C89F5A200642828 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		04CCB4742C89F5A200642828 /* Banquemisr_challenge05.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Banquemisr_challenge05.xcdatamodel; sourceTree = "<group>"; };
-		04CCB4762C89F5A200642828 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		04CCB4782C89F5A600642828 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04CCB47A2C89F5A600642828 /* Banquemisr_challenge05.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Banquemisr_challenge05.entitlements; sourceTree = "<group>"; };
 		04CCB47C2C89F5A600642828 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -76,6 +100,109 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0422DAD62C8F36E9003DCDC8 /* MovieModule */ = {
+			isa = PBXGroup;
+			children = (
+				0422DAD92C8F375B003DCDC8 /* PresentationLayer */,
+				0422DADA2C8F376A003DCDC8 /* ApplicationLayer */,
+				0422DAD82C8F3750003DCDC8 /* DomainLayer */,
+			);
+			path = MovieModule;
+			sourceTree = "<group>";
+		};
+		0422DAD72C8F3734003DCDC8 /* InfrastructureLayer */ = {
+			isa = PBXGroup;
+			children = (
+				0422DAED2C8F91DF003DCDC8 /* NetworkLayer */,
+			);
+			path = InfrastructureLayer;
+			sourceTree = "<group>";
+		};
+		0422DAD82C8F3750003DCDC8 /* DomainLayer */ = {
+			isa = PBXGroup;
+			children = (
+				0422DAE52C8F56D8003DCDC8 /* MovieEntity.swift */,
+				0422DAE72C8F57C4003DCDC8 /* MovieDetailesEntity.swift */,
+			);
+			path = DomainLayer;
+			sourceTree = "<group>";
+		};
+		0422DAD92C8F375B003DCDC8 /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				0422DAFC2C8FB85D003DCDC8 /* HomeView.swift */,
+				0422DADB2C8F384D003DCDC8 /* MoviesView.swift */,
+				0422DADD2C8F3888003DCDC8 /* MovieDetailsView.swift */,
+				0422DADF2C8F38A5003DCDC8 /* MoviesViewModel.swift */,
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		0422DADA2C8F376A003DCDC8 /* ApplicationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				0422DAEB2C8F8E97003DCDC8 /* MoviesRepository.swift */,
+				0422DAE92C8F8DD8003DCDC8 /* GetNowPlayingUseCase.swift */,
+			);
+			path = ApplicationLayer;
+			sourceTree = "<group>";
+		};
+		0422DAE22C8F3E0A003DCDC8 /* AppFiles */ = {
+			isa = PBXGroup;
+			children = (
+				04CCB46F2C89F5A200642828 /* Banquemisr_challenge05App.swift */,
+				04CCB4712C89F5A200642828 /* Persistence.swift */,
+				04CCB4782C89F5A600642828 /* Assets.xcassets */,
+				04CCB47A2C89F5A600642828 /* Banquemisr_challenge05.entitlements */,
+				04CCB4732C89F5A200642828 /* Banquemisr_challenge05.xcdatamodeld */,
+				04CCB47B2C89F5A600642828 /* Preview Content */,
+			);
+			path = AppFiles;
+			sourceTree = "<group>";
+		};
+		0422DAE42C8F402F003DCDC8 /* AppModules */ = {
+			isa = PBXGroup;
+			children = (
+				0422DAD62C8F36E9003DCDC8 /* MovieModule */,
+			);
+			path = AppModules;
+			sourceTree = "<group>";
+		};
+		0422DAED2C8F91DF003DCDC8 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				0422DAF72C8F9818003DCDC8 /* NetworkProvider.swift */,
+				0422DAEF2C8F9224003DCDC8 /* Repositories */,
+				0422DAEE2C8F91F8003DCDC8 /* EndPoint */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		0422DAEE2C8F91F8003DCDC8 /* EndPoint */ = {
+			isa = PBXGroup;
+			children = (
+				0422DAF02C8F9256003DCDC8 /* EndPoint.swift */,
+				0422DAF22C8F9333003DCDC8 /* MoviesEndPoint.swift */,
+			);
+			path = EndPoint;
+			sourceTree = "<group>";
+		};
+		0422DAEF2C8F9224003DCDC8 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				0422DAF52C8F978F003DCDC8 /* MoviesRepositoryImp.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		0422DAF92C8FADB4003DCDC8 /* AppHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				0422DAFA2C8FADD0003DCDC8 /* Extentions.swift */,
+			);
+			path = AppHelpers;
+			sourceTree = "<group>";
+		};
 		04CCB4632C89F5A200642828 = {
 			isa = PBXGroup;
 			children = (
@@ -99,13 +226,10 @@
 		04CCB46E2C89F5A200642828 /* Banquemisr.challenge05 */ = {
 			isa = PBXGroup;
 			children = (
-				04CCB46F2C89F5A200642828 /* Banquemisr_challenge05App.swift */,
-				04CCB4712C89F5A200642828 /* Persistence.swift */,
-				04CCB4762C89F5A200642828 /* ContentView.swift */,
-				04CCB4782C89F5A600642828 /* Assets.xcassets */,
-				04CCB47A2C89F5A600642828 /* Banquemisr_challenge05.entitlements */,
-				04CCB4732C89F5A200642828 /* Banquemisr_challenge05.xcdatamodeld */,
-				04CCB47B2C89F5A600642828 /* Preview Content */,
+				0422DAE22C8F3E0A003DCDC8 /* AppFiles */,
+				0422DAF92C8FADB4003DCDC8 /* AppHelpers */,
+				0422DAE42C8F402F003DCDC8 /* AppModules */,
+				0422DAD72C8F3734003DCDC8 /* InfrastructureLayer */,
 			);
 			path = Banquemisr.challenge05;
 			sourceTree = "<group>";
@@ -265,10 +389,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0422DAE82C8F57C4003DCDC8 /* MovieDetailesEntity.swift in Sources */,
+				0422DADE2C8F3888003DCDC8 /* MovieDetailsView.swift in Sources */,
+				0422DAE62C8F56D8003DCDC8 /* MovieEntity.swift in Sources */,
+				0422DAEC2C8F8E97003DCDC8 /* MoviesRepository.swift in Sources */,
+				0422DADC2C8F384D003DCDC8 /* MoviesView.swift in Sources */,
+				0422DAFD2C8FB85D003DCDC8 /* HomeView.swift in Sources */,
+				0422DAF12C8F9256003DCDC8 /* EndPoint.swift in Sources */,
 				04CCB4702C89F5A200642828 /* Banquemisr_challenge05App.swift in Sources */,
 				04CCB4752C89F5A200642828 /* Banquemisr_challenge05.xcdatamodeld in Sources */,
-				04CCB4772C89F5A200642828 /* ContentView.swift in Sources */,
+				0422DAE02C8F38A5003DCDC8 /* MoviesViewModel.swift in Sources */,
+				0422DAEA2C8F8DD8003DCDC8 /* GetNowPlayingUseCase.swift in Sources */,
+				0422DAF32C8F9333003DCDC8 /* MoviesEndPoint.swift in Sources */,
+				0422DAFB2C8FADD0003DCDC8 /* Extentions.swift in Sources */,
 				04CCB4722C89F5A200642828 /* Persistence.swift in Sources */,
+				0422DAF62C8F978F003DCDC8 /* MoviesRepositoryImp.swift in Sources */,
+				0422DAF82C8F9818003DCDC8 /* NetworkProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,10 +560,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Banquemisr.challenge05/Banquemisr_challenge05.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Banquemisr.challenge05/AppFiles/Banquemisr_challenge05.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Banquemisr.challenge05/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Banquemisr.challenge05/AppFiles/Preview Content\"";
 				DEVELOPMENT_TEAM = FMYX9S9BQ2;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -463,10 +599,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Banquemisr.challenge05/Banquemisr_challenge05.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Banquemisr.challenge05/AppFiles/Banquemisr_challenge05.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Banquemisr.challenge05/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Banquemisr.challenge05/AppFiles/Preview Content\"";
 				DEVELOPMENT_TEAM = FMYX9S9BQ2;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
