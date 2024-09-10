@@ -15,17 +15,17 @@ struct MovieCellCard: View {
     var body: some View {
         
         VStack(alignment: .leading, spacing: 25) {
-            AsyncImage(url: URL(string: "https://image.tmdb.org/t/p/w500\(imagePath)")) { image in
-                image
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                
-            } placeholder: {
-                Image(systemName: "photo")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-            }
-            .cornerRadius(10)
+//            AsyncImage(url: URL(string: "https://image.tmdb.org/t/p/w500\(imagePath)")) { image in
+//                image
+//                    .resizable()
+//                    .aspectRatio(contentMode: .fit)
+//                
+//            } placeholder: {
+//                Image(systemName: "photo")
+//                    .resizable()
+//                    .aspectRatio(contentMode: .fit)
+//            }
+//            .cornerRadius(10)
             
             Text(title)
                 .foregroundColor(.black)
