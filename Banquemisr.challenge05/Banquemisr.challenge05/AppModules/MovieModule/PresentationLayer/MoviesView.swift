@@ -33,7 +33,7 @@ struct MoviesView: View {
             NavigationLink(destination: MovieDetailsView(movie: movie)) {
                 MovieCellCard(imagePath: movie.posterPath ?? "", title: movie.title ?? "")
             }
-//            .listRowSeparator(.hidden)
+            .listRowSeparator(.hidden)
             .listRowBackground(
                 RoundedRectangle(cornerRadius: 10)
                     .foregroundColor(.white)
