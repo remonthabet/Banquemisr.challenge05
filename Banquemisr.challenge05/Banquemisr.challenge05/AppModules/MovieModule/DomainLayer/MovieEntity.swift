@@ -10,7 +10,7 @@ struct MovieEntity: Codable {
     let page: Int?
     let results: [Movie]?
     let totalPages, totalResults: Int?
-
+    
     enum CodingKeys: String, CodingKey {
         case page, results
         case totalPages = "total_pages"
@@ -23,7 +23,7 @@ struct Movie: Codable, Equatable {
     let id: Int
     let originalTitle, overview: String?
     let posterPath, releaseDate, title: String?
-
+    
     enum CodingKeys: String, CodingKey {
         case id
         case originalTitle = "original_title"

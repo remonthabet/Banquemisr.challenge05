@@ -7,7 +7,7 @@
 
 import XCTest
 
-final class HomeViewUITest: XCTestCase {
+final class TapsViewUITest: XCTestCase {
 
     let app = XCUIApplication()
 

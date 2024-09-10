@@ -1,13 +1,13 @@
 //
-//  GetNowPlayingUseCase.swift
+//  GetUpcomingUseCase.swift
 //  Banquemisr.challenge05
 //
-//  Created by remon on 09/09/2024.
+//  Created by remon on 11/09/2024.
 //
 
 import Foundation
 import Combine
-struct GetNowPlayingUseCase {
+struct GetUpcomingUseCase {
     private let moviesRepository: MoviesRepository
     
     init(moviesRepository: MoviesRepository = MoviesRepositoryImp()) {
@@ -15,6 +15,6 @@ struct GetNowPlayingUseCase {
     }
     
     func fetch() async throws -> [Movie] {
-        return try await moviesRepository.getNowPlayingMovies()
+        return try await moviesRepository.getUpcomingMovies()
     }
 }

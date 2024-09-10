@@ -12,7 +12,7 @@ struct AppHelper {
         return await withCheckedContinuation { continuation in
             let monitor = NWPathMonitor()
             let queue = DispatchQueue.global(qos: .background)
-
+            
             monitor.pathUpdateHandler = { path in
                 if path.status == .satisfied {
                     continuation.resume(returning: true) // Internet connection is available
@@ -21,7 +21,7 @@ struct AppHelper {
                 }
                 monitor.cancel() // Stop monitoring after the first check
             }
-
+            
             monitor.start(queue: queue)
         }
     }

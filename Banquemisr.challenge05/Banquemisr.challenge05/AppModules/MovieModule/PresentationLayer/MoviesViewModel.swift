@@ -8,24 +8,61 @@
 import Foundation
 class MoviesViewModel: ObservableObject {
     @Published var movieList: [Movie] = []
-    @Published var errorMessage: String?
+    @Published var errorMessage: String = ""
     @Published var hasError: Bool = false
-
-    private let getNowPlayingMoviesUseCase: GetNowPlayingUseCase
-
-    init(getNowPlayingMoviesUseCase: GetNowPlayingUseCase = GetNowPlayingUseCase()) {
-        self.getNowPlayingMoviesUseCase = getNowPlayingMoviesUseCase
+    
+    private let getNowPlayingUseCase: GetNowPlayingUseCase
+    private let getPopularUseCase: GetPopularUseCase
+    private let getUpcomingUseCase: GetUpcomingUseCase
+    
+    init(getNowPlayingUseCase: GetNowPlayingUseCase = GetNowPlayingUseCase(),
+         getPopularUseCase: GetPopularUseCase = GetPopularUseCase(),
+         getUpcomingUseCase: GetUpcomingUseCase = GetUpcomingUseCase()) {
+        self.getNowPlayingUseCase = getNowPlayingUseCase
+        self.getPopularUseCase = getPopularUseCase
+        self.getUpcomingUseCase = getUpcomingUseCase
     }
-
-    func loadMovies() {
+    
+    func fetchNowPlayingMovies() {
         Task {
             do {
-                let movies = try await getNowPlayingMoviesUseCase.fetch()
+                let movies = try await getNowPlayingUseCase.fetch()
                 DispatchQueue.main.async {
                     self.movieList = movies
                 }
             } catch {
-                // TODO: [fetch from DB].
+                DispatchQueue.main.async {
+                    self.hasError = true
+                    self.errorMessage = error.localizedDescription
+                }
+            }
+        }
+    }
+    
+    func fetchPopularMovies() {
+        Task {
+            do {
+                let movies = try await getPopularUseCase.fetch()
+                DispatchQueue.main.async {
+                    self.movieList = movies
+                }
+            } catch {
+                DispatchQueue.main.async {
+                    self.hasError = true
+                    self.errorMessage = error.localizedDescription
+                }
+            }
+        }
+    }
+    
+    func fetchUpcomingMovies() {
+        Task {
+            do {
+                let movies = try await getUpcomingUseCase.fetch()
+                DispatchQueue.main.async {
+                    self.movieList = movies
+                }
+            } catch {
                 DispatchQueue.main.async {
                     self.hasError = true
                     self.errorMessage = error.localizedDescription

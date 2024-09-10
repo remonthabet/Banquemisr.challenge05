@@ -12,7 +12,7 @@ struct Banquemisr_challenge05App: App {
 
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            TapsView()
         }
     }
 }
