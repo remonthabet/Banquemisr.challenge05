@@ -8,8 +8,8 @@
 import Foundation
 import Combine
 protocol MoviesRepository {
-    func GetNowPlayingMovies() async throws -> MovieEntity
-    func GetPopularMovies() async throws -> MovieEntity
-    func GetUpcomingMovies() async throws -> MovieEntity
+    func GetNowPlayingMovies() async throws -> [Movie]
+    func GetPopularMovies() async throws -> [Movie]
+    func GetUpcomingMovies() async throws -> [Movie]
     func GetMovieDetail(by id: Int) async throws -> MovieDetailsEntity
 }

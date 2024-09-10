@@ -9,29 +9,33 @@ import Foundation
 import Combine
 struct MoviesRepositoryImp : MoviesRepository {
 
-    fileprivate let provider: NetworkProviderProtocol
+    private let provider: NetworkProviderProtocol
+
     init(provider: NetworkProviderProtocol = DefaultAppNetworkProvider()) {
         self.provider = provider
     }
 
-    func GetNowPlayingMovies() async throws -> MovieEntity {
+    func GetNowPlayingMovies() async throws -> [Movie] {
         let endpoint = MoviesEndPoint.getNowPlayingMovies
-
-        return try await provider.get(type: MovieEntity.self, endpoint: endpoint).asAsync()
+        
+        let response = try await provider.get(type: MovieEntity.self, endpoint: endpoint).asAsync()
+        return response.results ?? []
     }
     
-    func GetPopularMovies() async throws -> MovieEntity {
+    func GetPopularMovies() async throws -> [Movie] {
         let endpoint = MoviesEndPoint.getPopularMovies
 
-        return try await provider.get(type: MovieEntity.self, endpoint: endpoint).asAsync()
+        let response = try await provider.get(type: MovieEntity.self, endpoint: endpoint).asAsync()
+        return response.results ?? []
     }
-    
-    func GetUpcomingMovies() async throws -> MovieEntity {
+
+    func GetUpcomingMovies() async throws -> [Movie] {
         let endpoint = MoviesEndPoint.getUpcomingMovies
 
-        return try await provider.get(type: MovieEntity.self, endpoint: endpoint).asAsync()
+        let response = try await provider.get(type: MovieEntity.self, endpoint: endpoint).asAsync()
+        return response.results ?? []
     }
-    
+
     func GetMovieDetail(by id: Int) async throws -> MovieDetailsEntity{
         let endpoint = MoviesEndPoint.getMovieDetailById(id)
 

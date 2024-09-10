@@ -19,7 +19,7 @@ struct MovieEntity: Codable {
 }
 
 // MARK: - MovieEntity
-struct Movie: Codable {
+struct Movie: Codable, Equatable {
     let id: Int
     let originalTitle, overview: String?
     let posterPath, releaseDate, title: String?

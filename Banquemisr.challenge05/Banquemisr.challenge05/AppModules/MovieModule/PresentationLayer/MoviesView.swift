@@ -12,15 +12,39 @@ struct MoviesView: View {
     var title : String
     var body: some View {
         NavigationView {
-            List(viewModel.movieList, id: \.id) { movie in
-                Text(movie.title ?? "")
-                  }
-                  .onAppear {
-                      viewModel.loadMovies()
-                  }.navigationTitle(title)
+            if viewModel.movieList.count > 0 {
+                NavigationLink(destination: MovieDetailsView()) {
+                    List(viewModel.movieList, id: \.id) { movie in
+                        MovieCellCard(imagePath: movie.posterPath ?? "", title: movie.title ?? "").listRowSeparator(.hidden)
+                            .listRowBackground(
+                                RoundedRectangle(cornerRadius: 10)
+                                    .foregroundColor(.white)
+                                    .padding(
+                                        EdgeInsets(
+                                            top: 2,
+                                            leading: 10,
+                                            bottom: 10,
+                                            trailing: 10
+                                        )
+                                    )
+                            )
+                    }
+
+                }
+            }else{
+                Text("No Movies")
+            }
+
+        }.onAppear {
+            viewModel.loadMovies()
+        }.navigationTitle(title).alert(isPresented: $viewModel.hasError) {
+            Alert(
+                title: Text("Error"),
+                message: Text(viewModel.errorMessage!),
+                dismissButton: .default(Text("OK"))
+            )
         }
     }
-
 }
 
 #Preview {

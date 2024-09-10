@@ -14,7 +14,6 @@ enum StatusCodes : Int{
 
 // MARK: - Network Controller
 protocol NetworkProviderProtocol: AnyObject {
-    typealias Headers = [String: Any]
 
     func get<T>(type: T.Type,
                 endpoint : EndPointProtcol

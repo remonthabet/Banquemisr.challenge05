@@ -9,7 +9,6 @@ import SwiftUI
 import CoreData
 
 struct HomeView: View {
-    @Environment(\.managedObjectContext) private var viewContext
 
     let nowPlaying = "Now playing"
     let popualr = "Popular"
@@ -34,5 +33,5 @@ struct HomeView: View {
 }
 
 #Preview {
-    HomeView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+    HomeView()
 }

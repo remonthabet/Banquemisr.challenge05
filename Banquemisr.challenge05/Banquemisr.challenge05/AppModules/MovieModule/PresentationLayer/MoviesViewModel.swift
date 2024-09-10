@@ -9,7 +9,7 @@ import Foundation
 class MoviesViewModel: ObservableObject {
     @Published var movieList: [Movie] = []
     @Published var errorMessage: String?
-    @Published var isLoading: Bool = false
+    @Published var hasError: Bool = false
 
     private let getNowPlayingMoviesUseCase: GetNowPlayingUseCase
 
@@ -20,12 +20,14 @@ class MoviesViewModel: ObservableObject {
     func loadMovies() {
         Task {
             do {
-                let movies = try await getNowPlayingMoviesUseCase.execute()
+                let movies = try await getNowPlayingMoviesUseCase.fetch()
                 DispatchQueue.main.async {
                     self.movieList = movies
                 }
             } catch {
+                // TODO: [fetch from DB].
                 DispatchQueue.main.async {
+                    self.hasError = true
                     self.errorMessage = error.localizedDescription
                 }
             }
